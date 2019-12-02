@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <table class="table col-12 col-md-9 mt-4">
+                <tbody *ngFor="let res of data ; let i = index">
+                    <tr>
+                        <th scope="row">
+                            <img class="pointer" [routerLink]="['/item', res.items[0].id]" src="{{ res.items[0].picture }}" alt="">
+                        </th>
+                        <td>
+                            <span class="p32">{{ res.items[0].price.amount | currency }}<span *ngIf="res.items[0].free_shipping"><img src="../../../../assets/img/ic_shipping.png" alt=""></span></span><br><br>
+                            <span class="pointer" [routerLink]="['/item', res.items[0].id]">{{ res.items[0].title }}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

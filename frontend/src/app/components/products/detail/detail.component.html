@@ -1,0 +1,27 @@
+<div class="container-fluid pt-4" *ngIf="data">
+    <div class="container bg">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="row justify-content-center">
+                    <div class="col-7" style="text-align: center; overflow: hidden;">
+                        <img src="{{data.item.picture}}" alt="">
+                    </div>
+                    <div class="col-5 up" style="text-align: start">
+                        <span><p class="p32">{{((data.item.condition === "new") ? "Nuevo" : "Usado")}} - {{ data.item.sold_quantity }} vendidos</p></span>
+                        <h4>{{data.item.title}}</h4>
+                        <h1>{{data.item.price.amount | currency}}</h1>
+                        <button type="button" class="btn btn-primary" style="width: 100%;">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-10">
+                <div class="row justify-content-start desc">
+                    <h5> Descripción del producto </h5>
+                    <p> {{data.item.description}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

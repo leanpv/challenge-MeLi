@@ -1,0 +1,21 @@
+.container-fluid {
+    background-color: #FFE600;
+}
+
+.searchIcon {
+    background: url('../../../../assets/img/ic_Search.png') no-repeat center center;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.mlIcon {
+    background: url('../../../../assets/img/Logo_ML.png') no-repeat center center;
+    height: 36px;
+    width: 53px;
+    display: block;
+}
+
+.btn {
+    background-color: #eeeeee;
+}

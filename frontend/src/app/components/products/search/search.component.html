@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="row justify-content-center p-2">
+                <div class="input-group col-12 col-md-7 p-0 px-0">
+                    <i class="mlIcon mr-4 pointer" [routerLink]="['/']"></i><input type="text" placeholder="nunca dejes de buscar" (keyup.enter)="getInput($event)" (change)="getInputValue($event)" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                    <div class="input-group-append">
+                        <button class="btn" (click)="getInput($event)" type="button"><i class="searchIcon"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
